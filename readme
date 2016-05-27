@@ -1,0 +1,4 @@
+The GoBackN sliding window protocol has been edited such that it gives explicit acknowledgments (colour green in the simulation) whenever there is an unbalance between the traffic from Protocol A to 
+B and vice versa. Later on negative acknowledgments were also added, in case a frame has checksum errors, and thus it will prompt the protocol to resend that frame.  
+The acknowledgements are usually sent by piggybacking, and the explicit acknowledgments come into play only when one of the protocols doesn't have a frame/packet to send with which it can also send the 
+acknowledgment.  
